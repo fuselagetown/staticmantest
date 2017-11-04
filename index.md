@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-<form method="POST" action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/">
+<form method="POST" action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/users/">
   <input name="options[redirect]" type="hidden" value="https://my-site.com">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
