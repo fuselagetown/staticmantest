@@ -32,7 +32,10 @@ comments:
   # with a `type` property, which configures the generated field, or any value
   # to be used directly (e.g. a string, number or array)
   generatedFields:
+    layout: client
+    status: logged-in
     category: clients
+    permalink: /clients/kid
     date:
       type: date
       options:
