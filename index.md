@@ -10,7 +10,7 @@ layout: home
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[name-parent]" type="text" value="Emilia">
-  <input name="fields[name-kid]" type="text" value="Torunn">
+  <input name="fields[type]" type="text" value="parent">
   
   
   <button type="submit">Go!</button>
