@@ -36,10 +36,7 @@ comments:
     status: logged-in
     category: clients
     permalink: /clients/kid
-    date:
-      type: date
-      options:
-        format: "timestamp-seconds"
+    date: 2017-01-01
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
