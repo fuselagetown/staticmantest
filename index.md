@@ -12,6 +12,7 @@ layout: home
   <label><input name="fields[name-parent]" type="text">Your first name</label>
   <label><input name="fields[name-kid]" type="text">Your first name</label>
   
+  
   <button type="submit">Go!</button>
 </form>
 </div>
