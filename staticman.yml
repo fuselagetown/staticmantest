@@ -21,7 +21,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "2017-01-01-{fields.title}"
+  filename: "2017-01-01-{@id}"
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
@@ -36,7 +36,10 @@ comments:
     status: logged-in
     category: clients
     permalink: /clients/kid
-    date: 2017-01-01
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
