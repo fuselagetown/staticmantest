@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- HTML5 Mobile Boilerplate -->
+<!--[if IEMobile 7]><html class="no-js iem7"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<html>
+
+<head>
+
+	<title>{{ page.title }}</title>	
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta charset="utf-8">
+ <!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script language="javascript">
+
+
+$(function() {
+ $('.cookie').click(function(){
+    $('.cookie').slideToggle( "fast" );
+    return false;
+  });
+});
+
+
+// $(document).ready(function() {
+//     $("#subbut").click(function() {
+//         $.post($("#firstform").attr("action"), $("#firstform").serialize(),
+//           function(data) {
+//             $("#msg").append(data);
+//             $.post($("#secondform").attr("action"), $("#secondform").serialize(),
+//               function(data) {
+//                 $("#msg").append(data);
+//               });
+//           });
+//       });
+//   });
+
+</script>
+
+</head>
+
+
+<body class="{{ page.body_class }} {{ page.skin }} {{ page.status }}">
+
+<section class="page">
+  {{ content }}
+</section>
+
+
+</body>
+
+</html>
