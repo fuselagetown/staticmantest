@@ -6,7 +6,7 @@ layout: home
 ---
 <div style="background: red">
 <form method="POST" action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/">
-  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <input name="options[redirect]" type="hidden" value="https://stitchfix-prototype.netlify.com/clients/kid">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label><input name="fields[name-parent]" type="text">Your first name</label>
