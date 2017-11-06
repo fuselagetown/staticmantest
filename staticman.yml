@@ -35,7 +35,7 @@ comments:
     layout: client
     status: logged-in
     category: clients
-    permalink: /clients/kid
+    permalink: /clients/{fields.type}
     date: 2017-01-01
 
   # Whether entries need to be appproved before they are published to the main
