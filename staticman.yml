@@ -21,7 +21,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "2017-01-01-{@id}"
+  filename: "2017-01-01-{fields.name}-{@id}"
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
@@ -35,6 +35,7 @@ comments:
     layout: client
     status: logged-in
     category: clients
+    permalink: /clients/kid
     date: 2017-01-01
 
   # Whether entries need to be appproved before they are published to the main
