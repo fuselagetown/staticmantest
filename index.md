@@ -9,8 +9,8 @@ layout: home
   <input name="options[redirect]" type="hidden" value="https://stitchfix-prototype.netlify.com/clients/kid">
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label><input name="fields[name-parent]" type="text">Your first name</label>
-  <label><input name="fields[name-kid]" type="text">Your first name</label>
+  <input name="fields[name-parent]" type="text" value="Emilia">
+  <input name="fields[name-kid]" type="text" value="Torunn">
   
   
   <button type="submit">Go!</button>
