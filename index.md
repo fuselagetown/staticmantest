@@ -7,13 +7,13 @@ layout: home
 <a href="#" class="cookie">do we have javascript?</a>
 
 <div style="background: red">
-<form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/_posts/clients/" id="firstform">
+<form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/" id="firstform">
  
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[title]" type="text" value="Emilia">
   <input name="fields[type]" type="text" value="parent">
 </form>
-<form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/_posts/clients/" id="secondform">
+<form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/" id="secondform">
 
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[title]" type="text" value="Torunn" id="kids-first-name">
