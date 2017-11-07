@@ -16,7 +16,7 @@ layout: home
 <form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/" id="secondform">
 
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <input name="fields[title]" type="text" value="Torunn">
+  <input name="fields[title]" type="text" value="Torunn" id="kids-first-name">
   <input name="fields[type]" type="text" value="kid">
 </form>
 
@@ -29,13 +29,14 @@ layout: home
 
 $(document).ready(function() {
     $("#subbut").click(function() {
+    	var firstName = $("#kids-first-name").val();
         $.post($("#firstform").attr("action"), $("#firstform").serialize(),
           function(data) {
             $("#msg").append(data);
             $.post($("#secondform").attr("action"), $("#secondform").serialize(),
               function(data) {
                 $("#msg").append(data);
-                 window.location.href = "https://stitchfix-prototype.netlify.com/clients/kid";
+                 window.location.href = 'https://stitchfix-prototype.netlify.com/clients/' + firstName;
               });
           });
 
