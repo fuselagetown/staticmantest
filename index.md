@@ -8,15 +8,13 @@ layout: home
 
 <div style="background: red">
 <form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/" id="firstform">
-  <input name="options[redirect]" type="hidden" value="https://stitchfix-prototype.netlify.com/clients/kid">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
+ 
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[title]" type="text" value="Emilia">
   <input name="fields[type]" type="text" value="parent">
 </form>
 <form  action="https://api.staticman.net/v2/entry/fuselagetown/staticmantest/gh-pages/comments/" id="secondform">
-  <input name="options[redirect]" type="hidden" value="https://stitchfix-prototype.netlify.com/clients/kid">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
+
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <input name="fields[title]" type="text" value="Torunn">
   <input name="fields[type]" type="text" value="kid">
@@ -25,14 +23,23 @@ layout: home
   <button type="submit" id="subbut">Go!</button>
 </div>
 
+<div id="msg"></div>
 
-<script language="javascript">
+<script>
+
 $(document).ready(function() {
     $("#subbut").click(function() {
-        $.post($("#firstform").attr("action"), $("#firstform").serialize()+$("#secondform").serialize(),
-              function() {
-                alert('Both forms submitted');
+        $.post($("#firstform").attr("action"), $("#firstform").serialize(),
+          function(data) {
+            $("#msg").append(data);
+            $.post($("#secondform").attr("action"), $("#secondform").serialize(),
+              function(data) {
+                $("#msg").append(data);
+                 window.location.href = "https://stitchfix-prototype.netlify.com/clients/kid";
               });
+          });
+
       });
   });
+
 </script>
